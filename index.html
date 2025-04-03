@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawa - Secure Private Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 5%;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+        }
+
+        .features {
+            padding: 4rem 5%;
+            background: white;
+        }
+
+        .feature-card {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-right: 2rem;
+            color: #3498db;
+        }
+
+        .screenshot-section {
+            padding: 4rem 5%;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .download-buttons {
+            margin: 2rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #2c3e50;
+            color: white;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .feature-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .feature-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="nawa_black.png" alt="Nawa Logo" class="logo">
+    </header>
+
+    <section class="hero">
+        <h1>Secure Private Messaging</h1>
+        <p>End-to-end encrypted chats that truly respect your privacy</p>
+        <div class="download-buttons">
+            <a href="#" class="btn btn-primary">
+                <i class="fab fa-google-play"></i> Download for Android
+            </a>
+            <a href="#" class="btn btn-secondary">
+                <i class="fab fa-apple"></i> Download for iOS
+            </a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <div>
+                <h2>Military-Grade Encryption</h2>
+                <p>All your messages are protected with end-to-end encryption. Not even we can read them.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-user-check feature-icon"></i>
+            <div>
+                <h2>Private Connections</h2>
+                <p>Chat anonymously without sharing personal information. No phone numbers required.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-comment-dots feature-icon"></i>
+            <div>
+                <h2>Secure Communication</h2>
+                <p>Self-destructing messages and screenshot protection for sensitive conversations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshot-section">
+        <h2>Your Private Conversations</h2>
+        <img src="nt3Bqfeb4HBF_1024_500.png" alt="App Screenshot" class="screenshot">
+    </section>
+
+    <footer>
+        <p>Follow us: 
+            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+        </p>
+        <p><a href="privacy-policy.html" style="color: #3498db;">Privacy Policy</a> | © 2024 Nawa Chat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
